@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D07F2795-2E60-443C-804D-82EA0DDF4213}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Hms_BusinessLogic_Layer">
+      <HintPath>..\Hms_BusinessLogic_Layer\obj\Debug\Hms_BusinessLogic_Layer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Visitors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Visitors.Designer.cs">
+      <DependentUpon>Add Visitors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addstd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addstd.Designer.cs">
+      <DependentUpon>Addstd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminShift.Designer.cs">
+      <DependentUpon>adminShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence_going.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence_going.Designer.cs">
+      <DependentUpon>Attendence_going.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessAttendence.Designer.cs">
+      <DependentUpon>MessAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomAllocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomAllocation.Designer.cs">
+      <DependentUpon>RoomAllocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shifting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shifting.Designer.cs">
+      <DependentUpon>Shifting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show Visitors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show Visitors.Designer.cs">
+      <DependentUpon>Show Visitors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stdBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stdBill.Designer.cs">
+      <DependentUpon>stdBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stdMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stdMain.Designer.cs">
+      <DependentUpon>stdMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="std_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="std_payment.Designer.cs">
+      <DependentUpon>std_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewHostelDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewHostelDetails.Designer.cs">
+      <DependentUpon>viewHostelDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStd.Designer.cs">
+      <DependentUpon>ViewStd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Visitors.resx">
+      <DependentUpon>Add Visitors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addstd.resx">
+      <DependentUpon>Addstd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminShift.resx">
+      <DependentUpon>adminShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence_going.resx">
+      <DependentUpon>Attendence_going.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessAttendence.resx">
+      <DependentUpon>MessAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoomAllocation.resx">
+      <DependentUpon>RoomAllocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shifting.resx">
+      <DependentUpon>Shifting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show Visitors.resx">
+      <DependentUpon>Show Visitors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stdBill.resx">
+      <DependentUpon>stdBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stdMain.resx">
+      <DependentUpon>stdMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="std_payment.resx">
+      <DependentUpon>std_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewHostelDetails.resx">
+      <DependentUpon>viewHostelDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStd.resx">
+      <DependentUpon>ViewStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Effective-Hostel-PMS-for-Hostel-Management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pg-management-software.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hostel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hostel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hostel_back.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
